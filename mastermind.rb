@@ -77,6 +77,7 @@ def code_checker(code1, code2)
 end
 
 def read_code(prompt)
+  guess = nil
   loop do
     print("#{prompt}: ")
     guess = gets.chomp
@@ -124,6 +125,7 @@ end
 puts "Colors: #{COLORS}"
 puts "Holes: #{HOLES}"
 
+mode = nil
 loop do
   puts '(c)reate or (g)uess? '
   mode = gets.chomp
